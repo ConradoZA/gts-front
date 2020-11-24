@@ -1,0 +1,32 @@
+[
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "610 - Emisión OPE",
+    "concepto": "982412 - Gastos Swift"
+  },
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "610 - Emisión OPE",
+    "concepto": "982412 - Gastos Swift"
+  },
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "610 - Emisión OPE",
+    "concepto": "982403 - Comisión No Cliente"
+  },
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "610 - Emisión OPE",
+    "concepto": "982401 - Comisión OPE"
+  },
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "670 - Modificación OPE",
+    "concepto": "982410 - Gastos OUR"
+  },
+  {
+    "producto": "990824 - ORDENES DE PAGO DE CAMBIO ENVIADAS",
+    "evento": "672 - Anulación OPE",
+    "concepto": "982402 - Comisión valuta"
+  }
+]
