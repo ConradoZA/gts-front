@@ -4,6 +4,11 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": "./",
+    // Las direcciones absolutas solo funcionan a partir de Angular 10
+    // "paths": {
+    //   "@/comp/*": ["components/*"],
+    //   "@/serv/*":["services/*"],
+    // },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

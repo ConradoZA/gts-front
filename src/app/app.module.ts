@@ -9,13 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { TableComponent } from './components/table/table.component';
 import { TableWrapperComponent } from './components/table-wrapper/table-wrapper.component';
 import { FormsModule } from '@angular/forms';
+import { SortDirective } from './directives/sort.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TableComponent,
-    TableWrapperComponent
+    TableWrapperComponent,
+    SortDirective
   ],
   imports: [
     BrowserModule,

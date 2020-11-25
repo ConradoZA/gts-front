@@ -8,23 +8,21 @@ import { GeneralService } from "../../services/general.service";
 })
 export class TableComponent implements OnInit {
   public data: Array<{}>;
-  public page: number;
-  public pageSize: number;
+  public page: number=1;
+  public pageSize: number=10;
   public collectionSize: number;
 
   constructor(private dataService: GeneralService) {}
 
   ngOnInit() {
     this.data = this.dataService.getFromData();
-    this.page = 1;
-    this.pageSize = 4;
     this.collectionSize = this.data.length;
   }
 
   refresh() {
     this.data = this.dataService
       .getFromData()
-      .map((item, i) => ({ id: i + 1, ...item }))
+      .map((item:any, index:number) => ({ id: index + 1, ...item }))
       .slice(
         (this.page - 1) * this.pageSize,
         (this.page - 1) * this.pageSize + this.pageSize
