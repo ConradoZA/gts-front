@@ -1,0 +1,18 @@
+{
+  "table": {
+    "options": {
+      "add": "Añadir",
+      "edit": "Editar",
+      "delete": "Borrar",
+      "refresh": "Actualizar"
+    },
+    "head": {
+      "product": "Producto",
+      "event": "Evento",
+      "concept": "Concepto"
+    },
+    "pagination": {
+      "perPage": "resultados/página"
+    }
+  }
+}

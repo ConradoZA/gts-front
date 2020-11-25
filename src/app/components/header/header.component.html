@@ -1,6 +1,15 @@
 <header>
   <div>logo</div>
   <p>One Trade</p>
-  <input type="search" id="search" name="seacrh" placeholder="Search...">
-  <li>User</li>
+  <input type="search" id="search" name="search" placeholder="Search..." />
+  <p>User</p>
+  <select
+    class="custom-select"
+    style="width: auto"
+    [(ngModel)]="language"
+    (ngModelChange)="onLanguageChange()"
+  >
+    <option value="es">Español</option>
+    <option value="en">English</option>
+  </select>
 </header>

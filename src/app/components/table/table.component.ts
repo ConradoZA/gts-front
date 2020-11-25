@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 import { GeneralService } from "../../services/general.service";
 
 @Component({
@@ -8,11 +9,14 @@ import { GeneralService } from "../../services/general.service";
 })
 export class TableComponent implements OnInit {
   public data: Array<{}>;
-  public page: number=1;
-  public pageSize: number=10;
+  public page: number = 1;
+  public pageSize: number = 10;
   public collectionSize: number;
 
-  constructor(private dataService: GeneralService) {}
+  constructor(
+    private dataService: GeneralService,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit() {
     this.data = this.dataService.getFromData();
@@ -22,7 +26,7 @@ export class TableComponent implements OnInit {
   refresh() {
     this.data = this.dataService
       .getFromData()
-      .map((item:any, index:number) => ({ id: index + 1, ...item }))
+      .map((item: any, index: number) => ({ id: index + 1, ...item }))
       .slice(
         (this.page - 1) * this.pageSize,
         (this.page - 1) * this.pageSize + this.pageSize

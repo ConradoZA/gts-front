@@ -1,14 +1,20 @@
 <table class="table table-striped table-bordered table-hover table-sm w-100">
   <thead class="table-header">
     <tr>
-      <th scope="col" [appSort]="data" data-order="desc" data-name="producto">Producto</th>
-      <th scope="col" [appSort]="data" data-order="desc" data-name="evento">Evento</th>
-      <th scope="col" [appSort]="data" data-order="desc" data-name="concepto">Concepto</th>
+      <th scope="col" [appSort]="data" data-order="desc" data-name="producto">
+        {{ "table.head.product" | translate }}
+      </th>
+      <th scope="col" [appSort]="data" data-order="desc" data-name="evento">
+        {{ "table.head.event" | translate }}
+      </th>
+      <th scope="col" [appSort]="data" data-order="desc" data-name="concepto">
+        {{ "table.head.concept" | translate }}
+      </th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let item of data">
-      <td scope="row">{{ item["producto"] }}</td>
+      <td>{{ item["producto"] }}</td>
       <td>{{ item["evento"] }}</td>
       <td>{{ item["concepto"] }}</td>
     </tr>
@@ -30,8 +36,14 @@
     [(ngModel)]="pageSize"
     (ngModelChange)="refresh()"
   >
-    <option [ngValue]="3">3 resultados/página</option>
-    <option [ngValue]="5">5 resultados/página</option>
-    <option [ngValue]="10">10 resultados/página</option>
+    <option [ngValue]="3">
+      3 {{ "table.pagination.perPage" | translate }}
+    </option>
+    <option [ngValue]="5">
+      5 {{ "table.pagination.perPage" | translate }}
+    </option>
+    <option [ngValue]="10">
+      10 {{ "table.pagination.perPage" | translate }}
+    </option>
   </select>
 </div>
