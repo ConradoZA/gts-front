@@ -13,6 +13,10 @@ import { TableComponent } from './components/table/table.component';
 import { TableWrapperComponent } from './components/table-wrapper/table-wrapper.component';
 
 import { SortDirective } from './directives/sort.directive';
+import { RelationsComponent } from './views/relations/relations.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
+import { HomeComponent } from './views/home/home.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { SortDirective } from './directives/sort.directive';
     HeaderComponent,
     TableComponent,
     TableWrapperComponent,
-    SortDirective
+    SortDirective,
+    RelationsComponent,
+    NotFoundComponent,
+    HomeComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
