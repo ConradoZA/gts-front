@@ -1,14 +1,9 @@
 <header>
-  <div>logo</div>
-  <p>One Trade</p>
+  <img class="logo" src="assets/imgs/FA_SANTANDER_SY_NEG_RGB.png" alt="logo">
+  <div class="align-middle">One Trade</div>
   <input type="search" id="search" name="search" placeholder="Search..." />
-  <p>User</p>
-  <select
-    class="custom-select"
-    style="width: auto"
-    [(ngModel)]="language"
-    (ngModelChange)="onLanguageChange()"
-  >
+  <div class="align-middle">User</div>
+  <select class="custom-select" style="width: auto" [(ngModel)]="language" (ngModelChange)="onLanguageChange()">
     <option value="es">Español</option>
     <option value="en">English</option>
   </select>
