@@ -1,0 +1,26 @@
+@import "../../../variables.scss";
+
+.side-nav {
+  width: 200px;
+
+  a {
+    background-color: #eee;
+    color: black;
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  :hover {
+    background-color: #ccc;
+  }
+
+  a.active {
+    background-color: $Santander-red;
+    color: white;
+  }
+}
+
+.w-30-t {
+  max-width: 30vw;
+}
